@@ -26,6 +26,7 @@ export const getStaticProps = async () => {
   // return에는 props라는 단하나의 객체로 넣어줘야함(문법)
   return {
     props: { allBooks, recoBooks },
+    revalidate: 3,
   };
 };
 
